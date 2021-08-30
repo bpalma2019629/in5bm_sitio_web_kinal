@@ -14,9 +14,18 @@ body{
     flex-wrap: wrap;
 }
 
+hr{
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+li{
+    font-size: 20PX;
+}
+
 .contenedor{
     width: 100%;
-    min-height: 70vh;
+    min-height: 80.4vh;
     overflow: hidden;
     margin: auto;
     padding: 60px 0;
@@ -24,7 +33,8 @@ body{
 }
 
 .header{
-    height: 25vh;
+    padding: 30px;
+    padding-top: 15px;
     background-image: linear-gradient(to top, rgba(10, 13, 150, 0.4) 0%, rgba(12, 69, 192, 0.4) 100%), url(../img/laptop.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -45,24 +55,19 @@ body{
     position:fixed;
     top: 0;
     right: 0;
-    width: auto;
-    height: auto;
+    width: 100px;
+    height: 114px;
     background-image: linear-gradient(-225deg, #0b0470 0%, #083596 48%, #042170 100%);
-    display: flex;
-    justify-content: space-evenly;
+    display: inline-block;
     align-items: center;
     box-shadow: 0 0 6px rgba(0, 0, 0,.5);
-}
-
-.spread{
-    transform: translate(0);
 }
 
 .menu-navegacion a{
     color: #fff;
     text-decoration: none;
     padding: 10px;
-    display: inline-flex;
+    display: block;
 }
 
 .menu-navegacion a:hover{
@@ -72,7 +77,6 @@ body{
 
 .titulo{
     position: inherit;
-    padding-top: 40px;
     font-size: 60px;
 
 }
@@ -90,11 +94,31 @@ body{
     font-size: 40px;
 }
 
-.contenedor-texto{
-    display: flex;
-    justify-content: space-evenly;
+.texto {
+    padding-top: 25px;
     align-items: center;
-    flex-wrap: wrap;
+    text-align: center;
+}
+
+.texto-bio{
+    padding-top: 25px;
+    margin-left: 10%;
+}
+
+.texto-bio p{
+    padding-bottom: 15px;
+}
+
+.texto p{
+    font-size: 20px;
+}
+
+.svg{
+    width: 350px;
+}
+
+.autor{
+    width: 150px;
 }
 
 .footer{
@@ -105,4 +129,25 @@ body{
     line-height: 3;
     width: 100%;
     
+}
+
+.videos{
+    padding-top: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.contenido-videos {
+    width: 90%;
+}
+
+.videos iframe{
+    width: 100%;
+    padding: 10px;
+}
+
+.videos a{
+    text-decoration: none;
 }
